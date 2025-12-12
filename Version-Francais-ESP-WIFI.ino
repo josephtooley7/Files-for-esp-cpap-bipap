@@ -36,12 +36,12 @@ String cycleResponses[numStates];   // Now one response per state
 // Custom labels for each state
 const char* stateLabels[numStates] = {
   "Battery%     = ",
-  "Humidity     = ",
-  "Pressure MAX = ",
-  "Pressure MIN = ",
+  "Humidité     = ",
+  "Pression MAX = ",
+  "Pression MIN = ",
   "Temperature  = ",
-  "Time / water level = ",
-  "empty value = "
+  "Temps        = ",
+  "Niveux d'eau = "
 };
 
 //Names of different modes
