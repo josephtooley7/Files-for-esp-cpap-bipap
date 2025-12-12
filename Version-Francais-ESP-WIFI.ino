@@ -937,10 +937,10 @@ void handleInformation() {
   String html = "<!DOCTYPE html><html><head><title>Information</title></head><body style='background-color:rgb(100,100,100);color:white;text-align:center;'>";
   html += "<h1>Information</h1><ul style='list-style:none;font-size:1.2cm;padding:15px;'>";
 
-  html += "<li>Humidity Setting= " + String(lastHumidity >= 0 ? lastHumidity : 0) + "%</li>";
-  html += "<li>Min Pressure = " + String(lastMinPressure >= 0 ? lastMinPressure : 0) + "</li>";
-  html += "<li>Max Pressure = " + String(lastMaxPressure >= 0 ? lastMaxPressure : 0) + "</li>";
-  html += "<li>CPAP Pressure = " + String(lastCpapPressure >= 3 && lastCpapPressure <= 40 ? lastCpapPressure : 0) + "</li>";
+  html += "<li>Humidité= " + String(lastHumidity >= 0 ? lastHumidity : 0) + "%</li>";
+  html += "<li>Pression Min = " + String(lastMinPressure >= 0 ? lastMinPressure : 0) + "</li>";
+  html += "<li>Pression Max = " + String(lastMaxPressure >= 0 ? lastMaxPressure : 0) + "</li>";
+  html += "<li>Pression CPAP = " + String(lastCpapPressure >= 3 && lastCpapPressure <= 40 ? lastCpapPressure : 0) + "</li>";
   //html += "<li>Mode = " + String(lastMode >= 0 ? lastMode : 0) + "</li>";
   String modeDisplay = (lastMode >= 1 && lastMode <= 6) ? modeNames[lastMode] : "None";
   html += "<li>Mode = " + modeDisplay + "</li>";
@@ -950,8 +950,8 @@ void handleInformation() {
   //html += "<li>Expiration Time = " + String(lastExpTime >= 1 && lastExpTime <= 100 ? lastExpTime : 0) + " s</li>";
 
   //adds the timing infromation
-  html += "<li>Inspiration Time = " + String(lastInspTime / 10.0, 1) + " s</li>";
-  html += "<li>Expiration Time = " + String(lastExpTime / 10.0, 1) + " s</li>";
+  html += "<li>Temps d'Inspiration = " + String(lastInspTime / 10.0, 1) + " s</li>";
+  html += "<li>Temps d'Expiration = " + String(lastExpTime / 10.0, 1) + " s</li>";
 
 
   for (int i = 0; i < numStates; i++) {
