@@ -397,7 +397,7 @@ const char HTML_CONTENT_MODES[] PROGMEM = R"=====(
   <title>Modes</title>
 </head>
 <body style="background-color: rgb(100, 100, 100); margin: 0; text-align:center;">
-  <h1 style="color:white;">Select Mode</h1>
+  <h1 style="color:white;">Sélectionnez un mode</h1>
 
   <select id="modeSelect" style="font-size:1.2cm; padding:10px; border-radius:10px;">
     <!--Ajust the modes value here-->
@@ -410,7 +410,7 @@ const char HTML_CONTENT_MODES[] PROGMEM = R"=====(
   </select>
 
   <div style="padding-top:40px;">
-    <button onclick="sendMode()" style="background-color:rgb(2,113,249);color:#f6f5f5;font-size:1cm;border-radius:10px;padding:20px 40px;">Send Mode</button>
+    <button onclick="sendMode()" style="background-color:rgb(2,113,249);color:#f6f5f5;font-size:1cm;border-radius:10px;padding:20px 40px;">Enregistrer</button>
   </div>
 
   <script>
