@@ -528,10 +528,15 @@ const char HTML_CONTENT_PRESSURE[] PROGMEM = R"=====(
 </head>
 <body>
 
+<!-- Page Title -->
+  <div style="color: white; font-size: 2em; margin-bottom: 40px;">
+    Saisir les valeurs de Pression (Cm H2O)
+  </div>
+
   <!-- Min Pressure Section -->
   <div class="section">
     <input type="number" id="minPressure" class="custom-input"
-           placeholder="Min Pressure" min="3" max="40">
+           placeholder="Minimum" min="3" max="40">
     <div>
       <button onclick="sendMinPressure()" class="button">Sauvegarder MIN</button>
     </div>
@@ -540,7 +545,7 @@ const char HTML_CONTENT_PRESSURE[] PROGMEM = R"=====(
   <!-- Max Pressure Section -->
   <div class="section">
     <input type="number" id="maxPressure" class="custom-input"
-           placeholder="Max Pressure" min="3" max="40">
+           placeholder="Maximum" min="3" max="40">
     <div>
       <button onclick="sendMaxPressure()" class="button">Sauvegarder MAX</button>
     </div>
@@ -594,7 +599,7 @@ const char HTML_CONTENT_PRESSURE[] PROGMEM = R"=====(
     <!-- CPAP Pressure Section -->
   <div class="section">
     <input type="number" id="cpapPressure" class="custom-input"
-          placeholder="CPAP Pressure" min="3" max="40">
+          placeholder="CPAP" min="3" max="40">
     <div>
       <button onclick="sendCpapPressure()" class="button">Saveguarder CPAP</button>
     </div>
